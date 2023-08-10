@@ -18,15 +18,15 @@ class Game {
 
   registerEvents() {
     document.addEventListener('keydown', (event) => {
-			const currentSymbol = this.currentSymbol
-			const symbolKey = event.key.toLowerCase()
-			const elementSymbol = currentSymbol.textContent.toLowerCase();
-			if (symbolKey === elementSymbol) {
-				this.success();
-			} else {
-				this.fail()
-			}
-		})
+      const currentSymbol = this.currentSymbol
+      const symbolKey = event.key.toLowerCase()
+      const elementSymbol = currentSymbol.textContent.toLowerCase();
+      if (symbolKey === elementSymbol) {
+        this.success();
+      } else {
+        this.fail()
+      }
+    })
   }
 
   success() {
