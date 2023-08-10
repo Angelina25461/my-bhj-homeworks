@@ -2,7 +2,6 @@ const value = document.querySelector('.dropdown__value');
 const drop = document.querySelector('.dropdown__list');
 const dropItems = document.querySelectorAll('.dropdown__item');
 
-
 dropItems.forEach((item) => {
 	item.addEventListener('click', (event) => {
 		event.preventDefault();
@@ -11,7 +10,6 @@ dropItems.forEach((item) => {
 		drop.classList.remove('dropdown__list_active');
 	})
 })
-
 
 value.addEventListener('click', () => {
 	drop.classList.toggle('dropdown__list_active');
