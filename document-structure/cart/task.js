@@ -12,9 +12,11 @@ decMinus.forEach((minus, index) => {
 
     minus.addEventListener('click', () => {
         let number = parseInt(numberProduct[index].textContent); 
-        if (number === 1) {
+        
+        if(number === 1){
             numberProduct[index].textContent = 1;
-            number -= 1;
+        } else {
+             number -= 1;
             numberProduct[index].textContent = number;
         }
     });
