@@ -31,7 +31,7 @@ document.addEventListener('click', (event) => {
     if (!event.target.classList.contains('has-tooltip')) {
         tooltipContainer.classList.remove('tooltip_active');
         tooltips.forEach((tooltip) => {
-            ooltip.classList.remove('has-tooltip_active');
+            tooltip.classList.remove('has-tooltip_active');
         });
     }
 });
