@@ -1,8 +1,6 @@
 const editor = document.getElementById('editor');
 
-if (localStorage.getItem('editorValue')) {
-    editor.value = localStorage.getItem('editorValue');
-}
+editor.value = localStorage.getItem('editorValue');
 
 editor.addEventListener('input', function () {
     localStorage.setItem('editorValue', editor.value);
